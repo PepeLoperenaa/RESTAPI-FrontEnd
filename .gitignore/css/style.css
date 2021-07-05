@@ -1,0 +1,13 @@
+#pie {
+	display: flex;
+	flex-direction: row;
+
+}
+
+#piechart {
+	width: 50%;
+}
+
+.legend {
+	width: 50%;
+}
