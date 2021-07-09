@@ -85,6 +85,7 @@ $(function () {
             "genre": $('#genre').val(),
             "type": $('#type').val()
         }
+        console.log(pelicula);
 
         if ($('#action').val() == 'edit') {
 
@@ -109,7 +110,6 @@ $(function () {
                 }
             });
         } else if ($('#action').val() == 'add') { //if the action of the form is adding a film
-
             console.log("Adding!");
 
             $.ajax({
@@ -155,6 +155,7 @@ $(function () {
             },
             error: function (error) {
                 console.log("Error...: " + JSON.stringify(error));
+                reload_table();
             }
         });
     });

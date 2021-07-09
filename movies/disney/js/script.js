@@ -147,7 +147,8 @@ $(function () {
                 reload_table();
             },
             error: function (error) {
-                alert("Error: " + error);
+                console.log("Error...: " + JSON.stringify(error)); //deletes but shoots error
+                reload_table();
             }
         });
     });
